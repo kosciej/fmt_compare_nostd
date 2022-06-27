@@ -45,6 +45,9 @@ impl<'a> Comparator<'a> {
     }
 
     fn is_valid(&self) -> bool {
+        // this is needed for situation where we have long &str on one side, and several shorter expressions
+        // on other side, which don't sum up to len(&str). For example without this condition this will yield true:
+        // write!("{} {}", "A","B") vs "A B C".
         self.to_compare.is_empty()
     }
 }

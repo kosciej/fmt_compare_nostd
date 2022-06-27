@@ -1,7 +1,12 @@
-# Utility functions for Display/Debug trait comparison in no_std environment.
+## Description
+
+Utility functions for Display/Debug trait comparison in no_std environment.
 
 This crate provides functions to compare output of Display and Debug traits against &str
 in no_std env. No `alloc` nor `std` is used.
+
+Broader description of the issue that this crate solves:
+[StackOverflow](https://stackoverflow.com/questions/72727634/how-to-test-result-of-corefmtdisplay-trait-implementation-in-no-std-env)
 
 ## Quick Start
 

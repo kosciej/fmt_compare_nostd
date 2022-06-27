@@ -1,7 +1,7 @@
 [package]
 name = "fmt_compare_nostd"
 description = "Library for comparing Display and Debug traits against &str without allocation. No_std compatible."
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Michal Zabielski <zabielski.michal@gmail.com>"]
 license = "MIT"
